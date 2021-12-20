@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="380.0" prefWidth="751.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <HBox layoutY="-14.0" prefHeight="115.0" prefWidth="752.0" style="-fx-background-color: #00c2ea;" />
+      <Text fill="WHITE" layoutX="156.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="School Trip Management System" wrappingWidth="413.4000244140626">
+         <font>
+            <Font name="Segoe UI Black" size="25.0" />
+         </font>
+      </Text>
+      <VBox layoutY="101.0" prefHeight="318.0" prefWidth="154.0" style="-fx-background-color: #00D3FF;">
+         <children>
+            <Button fx:id="btn2" alignment="CENTER" mnemonicParsing="false" onAction="#homescreen" pickOnBounds="false" prefHeight="43.0" prefWidth="154.0" style="-fx-background-color: #00D3FF;" text="Home" textFill="WHITE">
+               <effect>
+                  <Blend />
+               </effect>
+            </Button>
+            <Button fx:id="btn2" alignment="CENTER" mnemonicParsing="false" onAction="#School" pickOnBounds="false" prefHeight="48.0" prefWidth="154.0" style="-fx-background-color: #00D3FF;" text="School" textFill="WHITE">
+               <effect>
+                  <Blend />
+               </effect>
+            </Button>
+            <Button fx:id="btn1" alignment="CENTER" mnemonicParsing="false" onAction="#TravelAgency" pickOnBounds="false" prefHeight="43.0" prefWidth="154.0" style="-fx-background-color: #00D3FF;" text="Travel Agency" textFill="WHITE">
+               <effect>
+                  <Blend />
+               </effect>
+            </Button>
+            <Button fx:id="adBut" alignment="CENTER" mnemonicParsing="false" onAction="#clickAdmin" pickOnBounds="false" prefHeight="43.0" prefWidth="154.0" style="-fx-background-color: #00D3FF;" text="Admin Panel" textFill="WHITE">
+               <effect>
+                  <Blend />
+               </effect>
+            </Button>
+         </children>
+      </VBox>
+      <Pane layoutX="154.0" layoutY="101.0" prefHeight="318.0" prefWidth="598.0" style="-fx-background-color: #00CCF1;">
+         <children>
+            <TextField fx:id="smName" layoutX="135.0" layoutY="46.0" prefHeight="25.0" prefWidth="227.0" style="-fx-background-color: #00D3FF;" />
+            <TextField fx:id="smPass" layoutX="135.0" layoutY="86.0" prefHeight="25.0" prefWidth="227.0" style="-fx-background-color: #00D3FF;" />
+            <Label layoutX="70.0" layoutY="50.0" prefHeight="17.0" prefWidth="54.0" text="Name:" />
+            <Label layoutX="66.0" layoutY="90.0" prefHeight="17.0" prefWidth="61.0" text="Password:" />
+            <Button fx:id="sNewSign" layoutX="293.0" layoutY="247.0" mnemonicParsing="false" onAction="#mSignUp" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #00D3FF;" text="Sign Up" />
+            <TextField fx:id="smPhone" layoutX="135.0" layoutY="124.0" prefHeight="25.0" prefWidth="227.0" style="-fx-background-color: #00D3FF;" />
+            <Label layoutX="66.0" layoutY="128.0" prefHeight="17.0" prefWidth="61.0" text="Phone #" />
+            <TextField fx:id="smAddress" layoutX="135.0" layoutY="159.0" prefHeight="25.0" prefWidth="227.0" style="-fx-background-color: #00D3FF;" />
+            <Label layoutX="66.0" layoutY="163.0" prefHeight="17.0" prefWidth="61.0" text="Address:" />
+            <TextField fx:id="smEmail" layoutX="135.0" layoutY="196.0" prefHeight="25.0" prefWidth="227.0" style="-fx-background-color: #00D3FF;" />
+            <Label layoutX="66.0" layoutY="200.0" prefHeight="17.0" prefWidth="61.0" text="Email:" />
+            <Label layoutX="149.0" layoutY="21.0" text="(For School Manager Only):-" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

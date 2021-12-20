@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="380.0" prefWidth="751.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <HBox layoutY="-14.0" prefHeight="115.0" prefWidth="752.0" style="-fx-background-color: #00c2ea;" />
+      <Text fill="WHITE" layoutX="156.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="School Trip Management System" wrappingWidth="413.4000244140626">
+         <font>
+            <Font name="Segoe UI Black" size="25.0" />
+         </font>
+      </Text>
+      <VBox layoutY="101.0" prefHeight="318.0" prefWidth="154.0" style="-fx-background-color: #00D3FF;">
+         <children>
+            <Button fx:id="btn2" alignment="CENTER" mnemonicParsing="false" onAction="#homescreen" pickOnBounds="false" prefHeight="43.0" prefWidth="154.0" style="-fx-background-color: #00D3FF;" text="Home" textFill="WHITE">
+               <effect>
+                  <Blend />
+               </effect>
+            </Button>
+            <Button fx:id="btn2" alignment="CENTER" mnemonicParsing="false" onAction="#School" pickOnBounds="false" prefHeight="48.0" prefWidth="154.0" style="-fx-background-color: #00D3FF;" text="Add Trip" textFill="WHITE">
+               <effect>
+                  <Blend />
+               </effect>
+            </Button>
+         </children>
+      </VBox>
+      <Pane layoutX="154.0" layoutY="101.0" prefHeight="318.0" prefWidth="598.0" style="-fx-background-color: #00CCF1;">
+         <children>
+            <TextField fx:id="fid" layoutX="138.0" layoutY="14.0" prefHeight="25.0" prefWidth="227.0" style="-fx-background-color: #00D3FF;" />
+            <TextField fx:id="forigin" layoutX="138.0" layoutY="46.0" prefHeight="25.0" prefWidth="227.0" style="-fx-background-color: #00D3FF;" />
+            <Label layoutX="84.0" layoutY="18.0" prefHeight="17.0" prefWidth="24.0" text="ID:" />
+            <Label layoutX="78.0" layoutY="50.0" prefHeight="17.0" prefWidth="61.0" text="Origin:" />
+            <Button fx:id="fAdd" layoutX="311.0" layoutY="279.0" mnemonicParsing="false" onAction="#tripAdd" prefHeight="25.0" prefWidth="54.0" style="-fx-background-color: #00D3FF;" text="Add">
+               <effect>
+                  <Glow />
+               </effect></Button>
+            <TextField fx:id="fdestination" layoutX="138.0" layoutY="79.0" prefHeight="25.0" prefWidth="227.0" style="-fx-background-color: #00D3FF;" />
+            <TextField fx:id="fdate" layoutX="138.0" layoutY="111.0" prefHeight="25.0" prefWidth="227.0" style="-fx-background-color: #00D3FF;" />
+            <Label layoutX="59.0" layoutY="83.0" prefHeight="17.0" prefWidth="69.0" text="Destination:" />
+            <Label layoutX="78.0" layoutY="115.0" prefHeight="17.0" prefWidth="61.0" text="Date:" />
+            <TextField fx:id="factivities" layoutX="138.0" layoutY="143.0" prefHeight="25.0" prefWidth="227.0" style="-fx-background-color: #00D3FF;" />
+            <TextField fx:id="fbudget" layoutX="138.0" layoutY="175.0" prefHeight="25.0" prefWidth="227.0" style="-fx-background-color: #00D3FF;" />
+            <Label layoutX="74.0" layoutY="147.0" prefHeight="17.0" prefWidth="54.0" text="Activities:" />
+            <Label layoutX="78.0" layoutY="179.0" prefHeight="17.0" prefWidth="61.0" text="Budget:" />
+            <TextField fx:id="fcheck" layoutX="138.0" layoutY="207.0" prefHeight="25.0" prefWidth="227.0" style="-fx-background-color: #00D3FF;" />
+            <TextField fx:id="fstatus" layoutX="138.0" layoutY="239.0" prefHeight="25.0" prefWidth="227.0" style="-fx-background-color: #00D3FF;" />
+            <Label layoutX="74.0" layoutY="211.0" prefHeight="17.0" prefWidth="54.0" text="Checks:" />
+            <Label layoutX="78.0" layoutY="243.0" prefHeight="17.0" prefWidth="61.0" text="Status:" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
